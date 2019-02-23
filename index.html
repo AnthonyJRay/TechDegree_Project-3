@@ -3,54 +3,52 @@
     <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="normalize.css">
             <link rel="stylesheet" href="css.css">
 
         <title>Sign-Up Form</title>
     </head>
     <body>
-        <div class="wrapper">
-
+        
         <head>
             <div class="header">
                 <h1>THE CODE REVIEW</h1>
                 <h2>Sign up for our Newsletter.</h2>
-                <p>Get the latest news on how your code is doing right in your inbox</p>
+                <p class="main_p">Get the latest news on how your code is doing right in your inbox</p>
                 </div>
+            </div>
 
-                <hr>
-                <hr>
+                <div><hr class="hr_1"></div>
+
+                <div><hr class="hr_2"></div>
                 
-
         </head>
-        <main>
 
-        <form action="index.html" method="post">
-            <div class="contact"></div>
+        <main>
+          <div class="contact">
+            <form action="index.html" method="post">
                 <fieldset>
-                    <legend>Contact Information</legend>
+
+                    <legend><h4>Contact Information</h4></legend>
 
             
-                <div>
+                
                     <label for="user_Name">Full Name</label>
-                    <input required type="text" id="user_Name" name="user_Name" placeholder="Required">     
-                </div>
-                <div>
+                    <input required type="text" id="user_Name" name="user_Name" placeholder=" Required">     
+                
                     <label for="user_Email">Email Address</label>
-                    <input required type="email" id="user_Email" name="user_Email" placeholder="Required">
-                </div> 
-                <div>
+                    <input required type="email" id="user_Email" name="user_Email" placeholder=" Required">
+                
                     <label for="user_Phone">Phone Number</label>
-                    <input required type="tel" id="user_Phone" name="user_Phone" placeholder="Example: 555-456-7890">
-                </div>
-                <div>
+                    <input required type="tel" id="user_Phone" name="user_Phone" placeholder=" Example: 555-456-7890"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                
                     <label for="user_Address">Street Address</label>
-                    <input required type="text" id="user_Address" name="user_Address" placeholder="Example: 123 W. Main St.">
-                </div>
-                <div>
+                    <input required type="text" id="user_Address" name="user_Address" placeholder=" Example: 123 W. Main St.">
+                
                     <label for="user_City">City</label>
-                    <input required type="text" id="user_City" name="user_City" placeholder="Example: Seattle">
-                </div>
-                <div>
+                    <input required type="text" id="user_City" name="user_City" placeholder=" Example: Seattle">
+               
                         <label for="user_State">State</label>
                         <select id="user_State" name="user_State">
                                 <option value="" selected="selected"> - Choose State - </option>
@@ -106,50 +104,55 @@
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
                             </select>
-                </div>
-                <div>
+               
                     <label for="user_Zip">Zip Code</label>
-                    <input required type="text" id="user_Zip" placeholder="Example: 54309">
-                </div>
+                    <input required type="text" id="user_Zip" placeholder=" Example: 54309">
+                
                 </fieldset>
+                </div>
+                
 
-                        <hr>
+                        <hr class="hr_3">
         
+                        <div class="newsletter">
                         <fieldset>
-                            <legend>Newsletter</legend>
+                            <legend><h4>Newsletter</h4></legend>
 
                         <p>Select the newsletters you would like to receive</p>
 
                         <input type="checkbox" id="html" value="html" name="news_html">
-                        <label for="html">HTML</label>
+                        <label for="html"> HTML</label>
 
                         <input type="checkbox" id="css" value="css" name="news_css">
-                        <label for="css">CSS</label>
+                        <label for="css"> CSS</label>
 
                         <input type="checkbox" id="js" value="js" name="news_js">
-                        <label for="js">Javascript</label>
+                        <label for="js"> Javascript</label>
         
-                        <h4>Newsletter Format</h4>
-                        <input type="radio" id="n_html" value="n_html" name="newsletter_html">
-                        <label for="n_html">HTML</label>
+                        <legend>Newsletter Format</legend>
+                        <input type="radio" id="n_html" value="n_html" name="format">
+                        <label for="n_html"> HTML</label>
 
-                        <input type="radio" id="n_text" value="n_text" name="newsletter_text">
-                        <label for="n_text">Plain Text</label>
+                        <input type="radio" id="n_text" value="n_text" name="format">
+                        <label for="n_text"> Plain Text</label>
         
                         <h4>Other topics you'd like to hear about</h4>
                         <input type="textarea">
         
                         <button type="submit">Sign Up</button>
                         
-                        </div>
+                            
                         </fieldset>
+                        </div>
                        </form>
+                       
 
         </main>
+        <div class="footer">
         <footer>
          <quote class="copyright">&copy;Copyright, The Code Review</quote>   
         </footer>
-        
+        </div>
 
     </body>
     </html>
