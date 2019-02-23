@@ -1,18 +1,20 @@
 * {
     box-sizing: border-box;
-    background: #fcfeff
+    background: #fcfeff;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header,
-.contact fieldset,
-.newsletter,
-.footer {
+
+.main_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
+.header {
+    width: 100%;
+}
 
 
 h1, h2, p {
@@ -23,7 +25,7 @@ h1 {
     font-size: 1.5em;
     width: 100%;
     color: white;
-    background: black;
+    background: #3E474F;
     padding: 10px;
     margin: 0 auto;
 }
@@ -47,6 +49,7 @@ hr {
 .hr_1 {
     height: 3px;
     margin-bottom: 0;
+    margin-top: 1em;
 }
 
 .hr_2 {
@@ -62,14 +65,16 @@ hr {
 .contact fieldset,
 .newsletter fieldset {
     padding: 0;
-    margin: 0;
+    margin: auto;
     border: none;
+    width: 95%;
 }
 
-input {
+input,
+select {
     background: rgb(244,244,244);
     border-style: none;
-    padding: 10px 0;
+    padding: 10px 5px 5px;
     margin-top: 5px;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -77,6 +82,122 @@ input {
 
 input[type=text],
 input[type=tel],
-input[type=email] {
+input[type=email],
+input[type=textarea],
+#user_State,
+#user_Zip {
     width: 100%;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=textarea]:focus,
+#user_State:focus {
+  background-color: rgba(231,236,255,.7);
+  color: #222222;
+  border: none;
+  padding: +3.5%;
+}
+
+input::placeholder {
+    text-align:right;
+    font-size:.8em;
+    font-style:italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.news_label {
+    display: block;
+    margin-bottom: 1em;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-bottom: 1em;
+}
+
+#js {
+    margin-bottom: 2.5em;
+}
+
+.news_format {
+    margin-bottom: 1em;
+}
+
+.topics {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+input[type=textarea] {
+    height: 100px;
+}
+
+button {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 1.5em;
+    background: rgba(116, 134, 150, .9);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align:center;
+    font-style:italic;
+    margin-bottom: 1em;
+}
+
+/* Media Query */
+
+@media(min-width: 768px) {
+    .contact div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    #user_State {
+        width: 90%;
+        margin-left: 1.5em;
+    }
+
+    label {
+        width: 40%;
+        padding-top: 10px;
+    }
+
+    .news_label {
+        width: 100%;
+    }
+
+    .header_intro,
+    .contact,
+    .newsletter,
+    .footer,
+    hr {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    h1{
+        display: block;
+    }
+
+    .contact {
+        max-width: 50%;
+    }
+
+    #user_Zip {
+        width: 90%;
+    }
+    
+    h1 {
+        max-width: 100%;
+    }
 }
