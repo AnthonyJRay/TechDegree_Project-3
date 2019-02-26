@@ -87,6 +87,7 @@ input[type=textarea],
 #user_State,
 #user_Zip {
     width: 100%;
+    transition-duration: 1s;
 }
 
 input[type=text]:focus,
@@ -97,8 +98,19 @@ input[type=textarea]:focus,
   background-color: rgba(231,236,255,.7);
   color: #222222;
   border: none;
-  padding: +3.5%;
+  padding: +1.5%;
 }
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+input[type=textarea]:hover,
+#user_State:hover {
+  background-color: rgba(231,236,255,.7);;
+
+}
+
+
 
 input::placeholder {
     text-align:right;
