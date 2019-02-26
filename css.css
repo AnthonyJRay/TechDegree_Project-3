@@ -87,7 +87,9 @@ input[type=textarea],
 #user_State,
 #user_Zip {
     width: 100%;
-    transition-duration: 1s;
+    transition-property: background, padding, border;
+    transition-duration: 1s, .5s;
+    
 }
 
 input[type=text]:focus,
@@ -97,7 +99,7 @@ input[type=textarea]:focus,
 #user_State:focus {
   background-color: rgba(231,236,255,.7);
   color: #222222;
-  border: none;
+  border: 2px solid #447a99;
   padding: +1.5%;
 }
 
