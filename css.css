@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     background: #fcfeff;
     font-family: 'Montserrat', sans-serif;
@@ -83,7 +83,7 @@ select {
 input[type=text],
 input[type=tel],
 input[type=email],
-input[type=textarea],
+.textarea,
 #user_State,
 #user_Zip {
     width: 100%;
@@ -95,7 +95,7 @@ input[type=textarea],
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
-input[type=textarea]:focus,
+.textarea:focus,
 #user_State:focus {
   background-color: rgba(231,236,255,.7);
   color: #222222;
@@ -106,7 +106,7 @@ input[type=textarea]:focus,
 input[type=text]:hover,
 input[type=email]:hover,
 input[type=tel]:hover,
-input[type=textarea]:hover,
+.textarea:hover,
 #user_State:hover {
   background-color: rgba(231,236,255,.7);;
 
@@ -144,7 +144,7 @@ input[type=checkbox] {
     margin-bottom: 1em;
 }
 
-input[type=textarea] {
+.textarea {
     height: 100px;
 }
 
@@ -158,10 +158,14 @@ button {
     border-radius: 5px;
 }
 
-.footer {
+.copyright {
     text-align:center;
     font-style:italic;
     margin-bottom: 1em;
+}
+
+.legend-title {
+    font-size: 1em;
 }
 
 /* Media Query */

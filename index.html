@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="stylesheet" href="normalize.css">
             <link rel="stylesheet" href="css.css">
             <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -12,7 +12,7 @@
     <body>
         
         <!-- Start HTML Head -->
-        <head>
+        <header>
             <div class="main_wrapper">
             <div class="header">
                 <h1>THE CODE REVIEW</h1>
@@ -28,15 +28,16 @@
 
                 <div><hr class="hr_2"></div>
                 
-        </head>
+        </header>
         <!-- End HTML Head -->
         <!-- Start of HTML Main -->
         <main>
-          <div class="contact">
+            <div class="contact">
             <form action="index.html" method="post">
+                
                 <fieldset>
 
-                    <legend><h4>Contact Information</h4></legend>
+                    <legend class="legend-title">Contact Information</legend>
 
             
                 
@@ -61,6 +62,7 @@
                     <label for="user_City">City</label>
                     <input required type="text" id="user_City" name="user_City" placeholder="Example: Seattle ">
                 </div>
+            
                 <div>
                         <label for="user_State">State</label>
                         <select id="user_State" name="user_State">
@@ -123,15 +125,14 @@
                     <input required type="text" id="user_Zip" placeholder="Example: 54309 ">
                 </div>
                 </fieldset>
-            </div>
-        </main>
+        
                 
 
                         <hr class="hr_3">
         
                         <div class="newsletter">
                         <fieldset>
-                            <legend><h4>Newsletter</h4></legend>
+                            <legend class="legend-title">Newsletter</legend>
 
                         <label class="news_label">Select the newsletters you would like to receive:</label>
 
@@ -143,7 +144,9 @@
 
                         <input type="checkbox" id="js" value="js" name="news_js">
                         <label for="js"> Javascript News</label>
-        
+                    </fieldset>
+
+                    <fieldset>
                         <legend class="news_format">Newsletter Format:</legend>
 
                         <input type="radio" id="n_html" value="n_html" name="format">
@@ -153,23 +156,24 @@
                         <label for="n_text"> Plain Text</label>
         
                         <h4 class="topics">Other topics you'd like to hear about:</h4>
-                        <input type="textarea">
+                        <textarea class="textarea"></textarea>
         
                         <button type="submit">Sign Up</button>
                         
                             
                         </fieldset>
                         </div>
-                       </form>
-                    </main>
+                      </form>
+                      </div>
+                    
         <!-- End HTML Main -->
         <!-- Start HTML Footer -->
         <div class="footer">
         <footer>
-         <quote class="copyright">&copy;Copyright, The Code Review</quote>   
+         <p class="copyright">&copy;Copyright, The Code Review</p>   
         </footer>
         <!-- End HTML Footer -->
         </div>
-
+    </main>
     </body>
     </html>
