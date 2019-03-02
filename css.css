@@ -166,12 +166,14 @@ button {
 
 .legend-title {
     font-size: 1em;
+    padding: 30px 0 20px 0;
 }
 
 /* Media Query */
 
 @media(min-width: 768px) {
     .contact div {
+        display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
@@ -218,7 +220,7 @@ button {
         max-width: 100%;
     }
 
-    .legend-title {
-        padding-top:20px;
+    .legend-title-news {
+        padding: 20px 0 10px 0;
     }
 }
