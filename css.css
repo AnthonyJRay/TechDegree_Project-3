@@ -172,7 +172,6 @@ button {
 
 @media(min-width: 768px) {
     .contact div {
-        display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
@@ -217,5 +216,9 @@ button {
     
     h1 {
         max-width: 100%;
+    }
+
+    .legend-title {
+        padding-top:20px;
     }
 }
